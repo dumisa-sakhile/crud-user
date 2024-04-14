@@ -3,7 +3,7 @@ const getUsers = async (req,res)=>{
      title: "Welcome to the Home Page",
      description: "User Management CRUD System",
    };
-   res.status(404).render("home", data); 
+   res.status(200).render("home", data); 
 }
 
 const addUser = async (req, res) => {
@@ -11,7 +11,7 @@ const addUser = async (req, res) => {
     title: "Add new user",
     description: "Add a new user to the system",
   };
-  res.status(404).render("add", data);
+  res.status(200).render("add", data);
 };
 
 const editUser = async (req, res) => {
@@ -19,7 +19,7 @@ const editUser = async (req, res) => {
     title: "Edit the user",
     description: "Edit this user on the system",
   };
-  res.status(404).render("edit", data);
+  res.status(200).render("edit", data);
 };
 
 
